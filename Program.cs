@@ -11,11 +11,11 @@ bool num = true;
 bool num2;
 int vaildnum = 0;
 
+while(input == "yes"){
 Console.WriteLine(" Want to play a game?");
 Console.ReadLine();
-
+Console.WriteLine("______________________________________________________________________________________");
 Console.WriteLine("Lets add two numbers ");
-while(input == "yes"){
 Console.WriteLine("Pick a number ");
  numberone = Console.ReadLine();
    num2 = Int32.TryParse(numberone,out vaildnum);
@@ -44,8 +44,9 @@ Console.WriteLine("Pick another one");
 int num1 = Convert.ToInt32(numberone);
 int num3 = Convert.ToInt32(numbertwo);
 Console.WriteLine("Your sum is " + (num1 + num3));
-Console.WriteLine("Type play again or type no to stop");
+Console.WriteLine("Type yes play again or type no to stop");
 input = Console.ReadLine();
+Console.WriteLine("______________________________________________________________________________________");
     }
 
 
