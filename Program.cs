@@ -11,9 +11,9 @@ bool num = true;
 bool num2;
 int vaildnum = 0;
 
-while(input == "yes"){
 Console.WriteLine(" Want to play a game?");
-Console.ReadLine();
+input = Console.ReadLine();
+while(input != "no"){
 Console.WriteLine("______________________________________________________________________________________");
 Console.WriteLine("Lets add two numbers ");
 Console.WriteLine("Pick a number ");
