@@ -18,6 +18,7 @@ Console.WriteLine("_____________________________________________________________
 Console.WriteLine("Lets add two numbers ");
 Console.WriteLine("Pick a number ");
  numberone = Console.ReadLine();
+ numberone = Console.ReadLine();
    num2 = Int32.TryParse(numberone,out vaildnum);
     if(num2 == true){
         if(vaildnum % 2 == 0 ){
@@ -28,26 +29,17 @@ Console.WriteLine("Pick a number ");
         }else{
             Console.WriteLine("invalid entry. please try again");
         }
-Console.WriteLine("Pick another one");
- numbertwo = Console.ReadLine();
-    num2 = Int32.TryParse(numberone,out vaildnum);
-    if(num2 == true){
-        if(vaildnum % 2 == 0 ){
-          
-        }else{
-            Console.WriteLine("");
-        }
-        }else{
-            Console.WriteLine("invalid entry. please try again");
-        }
- 
+        {
+
 int num1 = Convert.ToInt32(numberone);
-int num3 = Convert.ToInt32(numbertwo);
+int num3 = Convert.ToInt32(numberone);
 Console.WriteLine("Your sum is " + (num1 + num3));
 Console.WriteLine("Type yes play again or type no to stop");
 input = Console.ReadLine();
 Console.WriteLine("______________________________________________________________________________________");
-    }
+         }
+}  
+ 
 
 
 
